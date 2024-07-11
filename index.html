@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            display: flex;
+            width: 900px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .login-section {
+            width: 50%;
+            background-color: #fff;
+            padding: 40px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-section h2 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .login-section p {
+            margin: 10px 0 20px 0;
+            color: #6c757d;
+            text-align: center;
+        }
+
+        .login-section form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-section input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .login-section button {
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #5865f2;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .login-section .google-login, .login-section .facebook-login {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+            cursor: pointer;
+        }
+
+        .login-section .google-login {
+            background-color: white;
+            color: #4285f4;
+        }
+
+        .login-section .facebook-login {
+            background-color: white;
+            color: #3b5998;
+        }
+
+        .info-section {
+            width: 50%;
+            background: #6b5bff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .info-box {
+            width: 80%;
+            text-align: center;
+        }
+
+        .info-box p {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-section">
+            <h2>LOGIN</h2>
+            <p>How to get started lorem ipsum dolor at?</p>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login Now</button>
+            </form>
+            <p>Login with Others</p>
+            <button class="google-login">Login with Google</button>
+            <button class="facebook-login">Login with Facebook</button>
+        </div>
+        <div class="info-section">
+            <div class="info-box">
+                <p>Very good works are waiting for you Login Now!!!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
